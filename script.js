@@ -264,7 +264,7 @@ function initProjectModals() {
   const pdfModalTitle = document.getElementById("pdf-modal-title");
   const pdfModalCategory = document.getElementById("pdf-modal-category");
   const pdfFrame = document.getElementById("pdf-frame");
-  
+
   // Showcase Content Elements
   const docOverviewText = document.getElementById("doc-overview-text");
   const docEnvGrid = document.getElementById("doc-env-grid");
@@ -524,7 +524,7 @@ function initSkillsTrigger() {
 }
 
 /* ==========================================
-   Contact Form Validation & Mock Submit
+   Contact Form Validation & API Submit
    ========================================== */
 function initContactForm() {
   const form = document.getElementById("contact-form");
@@ -557,23 +557,42 @@ function initContactForm() {
       return;
     }
 
+    const base = (window.APP_CONFIG || {}).API_BASE;
+    if (!base) {
+      showError("API endpoint is not configured.");
+      return;
+    }
+
     // Toggle button loading state
     const originalBtnHTML = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<i class="lucide-loader-2 animate-spin"></i> Sending...';
     lucide.createIcons(); // refresh loader spin icon
 
-    // Mock API request delay
-    setTimeout(() => {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalBtnHTML;
-      lucide.createIcons();
+    fetch(base + "/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, subject, message }),
+    })
+      .then(async (res) => {
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          throw new Error(data.error || "Failed to send message.");
+        }
 
-      // Show success feedback and clear form
-      successFeedback.style.display = "block";
-      successFeedback.textContent = `Thank you, ${name}! Your message has been sent successfully. Midhun will respond shortly.`;
-      form.reset();
-    }, 1800);
+        // Show success feedback and clear form
+        successFeedback.style.display = "block";
+        successFeedback.textContent = `Thank you, ${name}! Your message has been sent successfully. Midhun will respond shortly.`;
+        form.reset();
+      })
+      .catch((err) => {
+        showError(err.message || "Something went wrong while sending your message.");
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHTML;
+        lucide.createIcons();
+      });
   });
 
   function showError(msg) {
