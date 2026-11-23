@@ -1,0 +1,15 @@
+# Azure resource exports - reference only
+azure-export.json
+azure-export.bicep
+
+# Secrets and local configuration
+local.settings.json
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated files
+node_modules/
+.azurite/
+.vscode/
+*.log

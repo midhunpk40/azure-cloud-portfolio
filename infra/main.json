@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.49.2.45890",
+      "templateHash": "10178798450736834593"
+    }
+  },
+  "resources": [],
+  "outputs": {
+    "resourceInventory": {
+      "type": "object",
+      "value": {
+        "cosmosDb": "[resourceId('Microsoft.DocumentDB/databaseAccounts', 'portfolio-cosmos-midhun')]",
+        "functionApp": "[resourceId('Microsoft.Web/sites', 'portfolio-visitor-api-midhun')]",
+        "appServicePlan": "[resourceId('Microsoft.Web/serverfarms', 'ASP-azurefinalprojectRG-a264')]",
+        "applicationInsights": "[resourceId('Microsoft.Insights/components', 'portfolio-visitor-api-midhun')]",
+        "storageAccount": "[resourceId('Microsoft.Storage/storageAccounts', 'portfoliostoremidhun')]",
+        "staticWebApp": "[resourceId('Microsoft.Web/staticSites', 'midhun-azure-portfolio')]",
+        "keyVault": "[resourceId('Microsoft.KeyVault/vaults', 'kv-midhun-portfolio-01')]",
+        "communicationService": "[resourceId('Microsoft.Communication/communicationServices', 'acs-midhun-portfolio')]",
+        "emailService": "[resourceId('Microsoft.Communication/emailServices', 'ecs-midhun-portfolio')]",
+        "smartDetectionActionGroup": "[resourceId('Microsoft.Insights/actionGroups', 'Application Insights Smart Detection')]",
+        "portfolioActionGroup": "[resourceId('Microsoft.Insights/actionGroups', 'portfolio-alerts')]",
+        "failedRequestsAlert": "[resourceId('Microsoft.Insights/metricAlerts', 'portfolio-alerts')]",
+        "exceptionsAlert": "[resourceId('Microsoft.Insights/metricAlerts', 'portfolio-exception-alert')]"
+      }
+    }
+  }
+}
