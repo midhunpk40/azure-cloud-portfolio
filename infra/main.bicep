@@ -26,7 +26,7 @@ resource staticWebApp 'Microsoft.Web/staticSites@2022-09-01' existing = {
   name: 'midhun-azure-portfolio'
 }
 
-resource keyVault 'Microsoft.KeyVault/vaults@2023-07-01' existing = {
+resource keyVault 'Microsoft.KeyVault/vaults@2026-02-01' existing = {
   name: 'kv-midhun-portfolio-01'
 }
 
