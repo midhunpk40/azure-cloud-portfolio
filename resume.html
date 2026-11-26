@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midhun P K â€” Cloud & DevOps Engineer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root {
+      --bg: #0b0d14;
+      --card-bg: #111422;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --accent: #0284c7;
+      --border: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #080a10;
+      color: #e2e8f0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    /* Floating control bar */
+    .resume-control-bar {
+      max-width: 860px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(17, 20, 34, 0.85);
+      backdrop-filter: blur(16px);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .btn-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.5rem 1.25rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+    }
+
+    .btn-back {
+      color: #b9b2ce;
+      background: transparent;
+    }
+    .btn-back:hover { color: #45e5f5; }
+
+    .btn-print {
+      background: linear-gradient(135deg, #ff5c8a 0%, #ffb45e 50%, #45e5f5 100%);
+      color: #0b091a;
+      font-weight: 700;
+    }
+    .btn-print:hover {
+      box-shadow: 0 0 20px rgba(255, 92, 138, 0.5);
+      transform: translateY(-2px);
+    }
+
+    /* Resume Document Wrapper (A4 look) */
+    .resume-sheet {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #ffffff;
+      color: #1e293b;
+      padding: 3rem 3.5rem;
+      border-radius: 12px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+    }
+
+    .header-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .header-contact {
+      text-align: center;
+      font-size: 0.88rem;
+      color: #475569;
+      margin-top: 0.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .header-contact a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+
+    .header-contact a:hover { text-decoration: underline; }
+
+    .sec-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 0.25rem;
+      margin: 1.25rem 0 0.65rem;
+    }
+
+    .summary-text {
+      font-size: 0.9rem;
+      color: #334155;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .skills-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      font-size: 0.88rem;
+    }
+
+    .skills-list strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    .job-item, .proj-item, .edu-item {
+      margin-bottom: 0.9rem;
+    }
+
+    .job-header, .proj-header, .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .job-company, .proj-tech, .edu-inst {
+      font-size: 0.88rem;
+      color: #0284c7;
+      font-weight: 600;
+    }
+
+    .job-date, .proj-date, .edu-date {
+      font-size: 0.82rem;
+      color: #64748b;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .bullet-list {
+      margin-top: 0.35rem;
+      padding-left: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      font-size: 0.87rem;
+      color: #334155;
+    }
+
+    .bullet-list li {
+      line-height: 1.5;
+    }
+
+    /* Mobile Responsiveness for Small Displays */
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.5rem;
+      }
+      .resume-control-bar {
+        flex-direction: column;
+        gap: 0.65rem;
+        padding: 0.85rem 1rem;
+        border-radius: 16px;
+      }
+      .btn-bar {
+        width: 100%;
+        justify-content: center;
+        min-height: 44px;
+      }
+      .resume-sheet {
+        padding: 1.5rem 1rem;
+        border-radius: 8px;
+        font-size: 0.88rem;
+      }
+      .header-name {
+        font-size: 1.75rem;
+      }
+      .header-contact {
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+      .header-contact span:nth-child(even) {
+        display: none; /* Hide separation bullets on mobile list */
+      }
+      .job-header, .proj-header, .edu-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+      }
+      .job-date, .proj-date, .edu-date {
+        font-size: 0.78rem;
+      }
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: #ffffff !important;
+        padding: 0 !important;
+      }
+      .resume-control-bar {
+        display: none !important;
+      }
+      .resume-sheet {
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 1.5cm !important;
+        max-width: 100% !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Controller Bar -->
+  <div class="resume-control-bar">
+    <a href="index.html" class="btn-bar btn-back">
+      <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i> Return to Portfolio
+    </a>
+    <button type="button" class="btn-bar btn-print">
+      <i data-lucide="printer" style="width: 16px; height: 16px;"></i> Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- A4 Printable Resume Document -->
+  <main class="resume-sheet">
+
+    <!-- Header -->
+    <header>
+      <h1 class="header-name">MIDHUN P K</h1>
+      <div class="header-contact">
+        <span><a href="mailto:midhunpk40@gmail.com">midhunpk40@gmail.com</a></span>
+        <span>â€¢</span>
+        <span><a href="tel:+917736729704">+91 7736729704</a></span>
+        <span>â€¢</span>
+        <span>Kannur, Kerala, India</span>
+        <span>â€¢</span>
+        <span><a href="https://linkedin.com/in/midhunmohanpk" target="_blank" rel="noopener noreferrer">linkedin.com/in/midhunmohanpk</a></span>
+        <span>â€¢</span>
+        <span><a href="https://github.com/midhunpk40" target="_blank" rel="noopener noreferrer">github.com/midhunpk40</a></span>
+      </div>
+    </header>
+
+    <!-- Summary -->
+    <section>
+      <h2 class="sec-title">Summary</h2>
+      <p class="summary-text">
+        Computer Science Engineering graduate and Cloud Intern with practical exposure to AWS and Microsoft Azure, CI/CD pipelines with GitHub Actions, Docker, and infrastructure automation. Comfortable with Linux, Python and Bash scripting, and networking fundamentals such as VPCs, security groups, and load balancing. Quick to learn new tools. Seeking a Cloud or DevOps engineering role where I can manage cloud infrastructure, build and maintain CI/CD pipelines, and help keep applications reliable and secure.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2 class="sec-title">Technical Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Cloud and Server Administration:</strong> AWS (EC2, S3, RDS, VPC, IAM, ALB, ECS Fargate, ECR, CloudWatch), Microsoft Azure (Virtual Machines, Virtual Networks, Storage, Entra ID, Azure Monitor), Linux, Windows Server, Virtualization, Apache HTTP Server, Web Hosting</li>
+        <li><strong>CI/CD and Version Control:</strong> GitHub Actions, CI/CD Pipelines, Git, GitHub, Deployment and Release Workflows</li>
+        <li><strong>Infrastructure as Code and Automation:</strong> Terraform, Infrastructure Automation, Bash, Python, AWS CLI, Azure CLI, User Data Scripts</li>
+        <li><strong>Containerization and Orchestration:</strong> Docker, Kubernetes, ECS Fargate, ECR</li>
+        <li><strong>Monitoring, Reliability and Security:</strong> Monitoring, High Availability, Load Balancing, Backup and Disaster Recovery, Cloud Security, IAM, Security Groups, Private Subnets, VPC Networking</li>
+        <li><strong>Languages and Tools:</strong> Python, Bash, SQL, MySQL, C, PHP, JavaScript, Node.js, HTML, CSS, Firebase, VS Code, Google Colab, Excel, Microsoft 365, Endpoint Management, Email Migration</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2 class="sec-title">Experience</h2>
+      <div class="job-item">
+        <div class="job-header">
+          <span>Cloud Intern</span>
+          <span class="job-date">09/2026 â€“ Present</span>
+        </div>
+        <div class="job-company">Febno Technologies</div>
+        <ul class="bullet-list">
+          <li>Practiced Windows Server administration, virtualization, web hosting, and email migration, building a working understanding of day-to-day infrastructure operations.</li>
+          <li>Gained practical experience with AWS (EC2, S3, IAM, VPC, RDS, CloudWatch) and Microsoft Azure (Virtual Machines, Virtual Networks, Storage, Entra ID, Azure Monitor), using the cloud portals, AWS CLI, and Azure CLI.</li>
+          <li>Explored infrastructure automation, monitoring, high availability, backup and disaster recovery, cloud security, Microsoft 365, and endpoint management.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2 class="sec-title">Projects</h2>
+
+      <!-- Project: Cold-Chain Excursion Monitoring Platform -->
+      <div class="proj-item">
+        <div class="proj-header">
+          <span>Cold-Chain Excursion Monitoring Platform</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="proj-tech">AWS IoT Core, Lambda, DynamoDB, EventBridge, Step Functions, SNS, Cognito, Terraform</div>
+        <ul class="bullet-list">
+          <li>Built a serverless AWS platform using IoT Core, Lambda, and DynamoDB that detects temperature excursions and silent sensors in simulated vaccine shipments.</li>
+          <li>Automated multi-tier alert dispatch and incident escalation workflows utilizing Amazon EventBridge, AWS Step Functions, and Amazon SNS.</li>
+          <li>Secured role-based access control (RBAC) on RESTful APIs with Amazon Cognito User Pools, and provisioned 100% of the multi-service cloud architecture via Terraform (IaC).</li>
+        </ul>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="proj-item">
+        <div class="proj-header">
+          <span>Cloud Task Manager</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="proj-tech">AWS, Docker, GitHub Actions, CI/CD, Flask, ECR, ECS Fargate</div>
+        <ul class="bullet-list">
+          <li>Built and containerized a Flask-based task management application using Docker, with SQLite for data storage.</li>
+          <li>Deployed on AWS ECS Fargate using Amazon ECR, VPC networking, and Security Groups for controlled network access.</li>
+          <li>Implemented a GitHub Actions CI/CD pipeline with GitHub OIDC and AWS IAM, automating Docker image builds, ECR pushes, and ECS deployments on every push to main.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-item">
+        <div class="proj-header">
+          <span>Secure 3-Tier Web Application on AWS</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="proj-tech">VPC, EC2, RDS MySQL, S3, IAM, Node.js, Express, AWS SDK v3</div>
+        <ul class="bullet-list">
+          <li>Architected a secure 3-tier web application in a custom VPC with public and private subnets across multiple Availability Zones.</li>
+          <li>Isolated the Amazon RDS MySQL database in private subnets and restricted inbound port 3306 traffic to the web tier security group only.</li>
+          <li>Integrated Amazon S3 storage with a Node.js and Express backend using AWS SDK v3, replacing static access keys with an IAM instance profile.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-item">
+        <div class="proj-header">
+          <span>High-Availability Multi-AZ Web Architecture with ALB</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="proj-tech">EC2, Application Load Balancer, Apache, Linux, User Data Scripts</div>
+        <ul class="bullet-list">
+          <li>Removed single points of failure by moving a single-server setup behind an internet-facing Application Load Balancer.</li>
+          <li>Deployed Linux EC2 web servers across two Availability Zones, automating Apache installation with User Data scripts.</li>
+          <li>Configured Target Group health checks and verified round-robin traffic distribution across healthy instances.</li>
+        </ul>
+      </div>
+
+      <!-- Project 4 (Azure) -->
+      <div class="proj-item">
+        <div class="proj-header">
+          <span>Azure Cloud Serverless Portfolio & API Platform</span>
+          <span class="proj-date">2026</span>
+        </div>
+        <div class="proj-tech">Azure Static Web Apps, Azure Functions, Cosmos DB, Application Insights, CI/CD</div>
+        <ul class="bullet-list">
+          <li>Engineered automated continuous deployment pipeline via GitHub Actions and Azure Static Web Apps with global edge CDN caching.</li>
+          <li>Developed serverless REST API endpoints deployed on Azure Functions with Cosmos DB session analytics and sub-10ms response latencies.</li>
+          <li>Hardened with enterprise Content Security Policy (CSP), HTTP security headers, and Application Insights observability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="sec-title">Education</h2>
+      <div class="edu-item">
+        <div class="edu-header">
+          <span>Skilled Diploma in Cloud Computing</span>
+          <span class="edu-date">06/2026 â€“ 08/2026</span>
+        </div>
+        <div class="edu-inst">TechnoDot Academy of R&D&I</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-header">
+          <span>B.Tech in Computer Science and Engineering</span>
+          <span class="edu-date">2022 â€“ 2026</span>
+        </div>
+        <div class="edu-inst">APJ Abdul Kalam Technological University</div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section>
+      <h2 class="sec-title">Achievements</h2>
+      <ul class="bullet-list">
+        <li><strong>Qualified GATE 2026 (Computer Science & Information Technology):</strong> Demonstrated deep foundational proficiency across Operating Systems, Algorithms, Computer Networks, and Database Systems.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

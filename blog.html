@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Blog &amp; Engineering Case Studies | Midhun P K</title>
+  <meta name="description" content="Technical articles and architecture walkthroughs by Midhun P K covering AWS, Microsoft Azure, Docker, GitHub Actions OIDC, serverless, and cloud security.">
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Decorative Orbs -->
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          MIDHUN P K<span class="logo-dot"></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <!-- Mobile Drawer Quick Actions -->
+          <li class="mobile-drawer-bottom">
+            <div class="mobile-drawer-cta-group">
+              <a href="resume.html" class="btn btn-secondary">
+                <i data-lucide="file-text"></i> View Resume
+              </a>
+              <a href="index.html#contact" class="btn btn-primary">
+                Get In Touch
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="nav-right-actions">
+          <a href="resume.html" class="btn btn-secondary nav-btn-desktop" style="padding: 0.45rem 1.15rem; font-size: 0.82rem;">
+            <i data-lucide="file-text" style="width: 14px; height: 14px;"></i> Resume
+          </a>
+          <a href="index.html#contact" class="btn btn-primary nav-btn-desktop" style="padding: 0.45rem 1.25rem; font-size: 0.82rem;">
+            Get In Touch
+          </a>
+          <button class="mobile-menu-btn" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Backdrop Overlay -->
+  <div class="nav-backdrop"></div>
+
+  <main style="padding-top: calc(var(--header-height) + 3rem); min-height: 80vh;">
+    <section class="blog" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-tag">Technical Publications</span>
+          <h1 class="section-title">Engineering Knowledge Base</h1>
+          <p class="section-desc">
+            In-depth guides, operational post-mortems, and architectural deep-dives across AWS, Azure, CI/CD pipelines, and cloud security.
+          </p>
+        </div>
+
+        <!-- Controls Row -->
+        <div class="blog-controls-row">
+          <div class="blog-categories-nav">
+            <button class="blog-cat-btn active" data-category="all">All Articles</button>
+            <button class="blog-cat-btn" data-category="devops">DevOps &amp; CI/CD</button>
+            <button class="blog-cat-btn" data-category="cloud">Cloud Architecture</button>
+            <button class="blog-cat-btn" data-category="azure">Azure &amp; Serverless</button>
+            <button class="blog-cat-btn" data-category="migration">Cloud Migration</button>
+          </div>
+
+          <div class="blog-search-box">
+            <i data-lucide="search"></i>
+            <input type="text" id="blog-search-input" placeholder="Search technical topics...">
+          </div>
+        </div>
+
+        <!-- Dynamic Blog Grid -->
+        <div id="blog-grid-container" class="blog-grid">
+          <!-- Populated from blog-data.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Blog Article Reader Modal -->
+  <div id="blog-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content blog-modal-content">
+      <button id="blog-modal-close" class="modal-close-btn" aria-label="Close Article Reader">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="blog-reader-header">
+        <span id="blog-reader-category" class="blog-cat-tag">Cloud Architecture</span>
+        <h2 id="blog-reader-title" class="modal-title" style="margin-top: 0.75rem;">Article Title</h2>
+        <div style="display: flex; gap: 1.5rem; color: var(--text-muted); font-size: 0.88rem; font-family: var(--font-mono); margin-top: 0.5rem;">
+          <span id="blog-reader-date">Nov 20, 2026</span>
+          <span>â€¢</span>
+          <span id="blog-reader-time">6 min read</span>
+          <span>â€¢</span>
+          <span>By Midhun P K</span>
+        </div>
+      </div>
+
+      <div class="blog-reader-body">
+        <div id="blog-reader-content" class="blog-article-content">
+          <!-- Dynamic article text, code blocks, diagrams -->
+        </div>
+
+        <div style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle);">
+          <h4 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 1.25rem;">
+            Related Technical Articles
+          </h4>
+          <div id="blog-reader-related" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+            <!-- Dynamic related cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; <span id="footer-year">2026</span> Midhun P K. Engineered for Cloud Scale.
+        </div>
+        <div class="footer-socials" style="display: flex; gap: 1rem; align-items: center;">
+          <a href="https://github.com/midhunpk40" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/midhunmohanpk" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="analytics.js"></script>
+  <script src="blog-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

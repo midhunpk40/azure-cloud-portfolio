@@ -3,224 +3,294 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Midhun P K | Cloud Intern & DevOps Portfolio</title>
-  
+  <title>Midhun P K | Cloud Infrastructure & DevOps Engineer</title>
+
   <!-- Meta Tags for SEO -->
-  <meta name="description" content="Portfolio of Midhun P K, Computer Science Engineering graduate and Cloud Intern with practical exposure to AWS, Microsoft Azure, Docker containerization, CI/CD pipelines with GitHub Actions, Linux administration, and infrastructure automation.">
-  <meta name="keywords" content="Midhun P K, Cloud Intern, Cloud Engineer, DevOps, AWS, Microsoft Azure, Docker, GitHub Actions, CI/CD, Linux, Terraform, Kannur, Kerala">
+  <meta name="description" content="Portfolio of Midhun P K, Computer Science Engineering graduate and Cloud Intern with practical expertise in AWS, Microsoft Azure, Docker, Kubernetes, CI/CD pipelines with GitHub Actions, Linux administration, and infrastructure automation.">
+  <meta name="keywords" content="Midhun P K, Cloud Engineer, DevOps, AWS, Microsoft Azure, Docker, Kubernetes, GitHub Actions, CI/CD, Terraform, Linux, Kannur, Kerala">
   <meta name="author" content="Midhun P K">
-  
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Midhun P K | Cloud Infrastructure & DevOps Engineer">
+  <meta property="og:description" content="Explore cloud architectures, DevOps pipelines, serverless deployments, and engineering case studies by Midhun P K.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://midhunpk40.github.io/">
+
+  <!-- Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Styling -->
   <link rel="stylesheet" href="style.css">
-  
+
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-  <!-- Decorative Orbs -->
+  <!-- Decorative Ambient Glow Orbs -->
   <div class="glow-orb glow-orb-1"></div>
   <div class="glow-orb glow-orb-2"></div>
   <div class="glow-orb glow-orb-3"></div>
 
   <!-- Header Section -->
   <header>
-    <div class="container nav-container">
-      <a href="#home" class="logo">
-        Midhun P K<span class="logo-dot"></span>
-      </a>
-      
-      <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      
-      <div class="nav-cta">
-        <a href="#contact" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">
-          Get In Touch
+    <div class="container">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          MIDHUN P K<span class="logo-dot"></span>
         </a>
-        <a href="#" id="resume-download-btn" class="btn btn-secondary">
-            <i data-lucide="download"></i> Download Resume
-        </a>  
+
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- Mobile Drawer Quick Actions -->
+          <li class="mobile-drawer-bottom">
+            <div class="mobile-visitor-pill" title="Live Cosmos DB Visitor Telemetry">
+              <i data-lucide="activity"></i>
+              <span>Live Visits: <strong id="visit-count-mobile">1,248</strong></span>
+            </div>
+            <div class="mobile-drawer-cta-group">
+              <a href="resume.html" class="btn btn-secondary">
+                <i data-lucide="file-text"></i> View Resume
+              </a>
+              <a href="#contact" class="btn btn-primary">
+                Get In Touch
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="nav-right-actions">
+          <!-- Visitor Telemetry Pill (Synced with Azure Functions / Cosmos DB) -->
+          <div class="nav-visitor-pill" title="Live Cosmos DB Visitor Telemetry">
+            <i data-lucide="activity"></i>
+            <span><strong id="visit-count">1,248</strong> visits</span>
+          </div>
+
+          <a href="resume.html" class="btn btn-secondary nav-btn-desktop" style="padding: 0.45rem 1.15rem; font-size: 0.82rem;">
+            <i data-lucide="file-text" style="width: 14px; height: 14px;"></i> Resume
+          </a>
+
+          <a href="#contact" class="btn btn-primary nav-btn-desktop" style="padding: 0.45rem 1.25rem; font-size: 0.82rem;">
+            Get In Touch
+          </a>
+
+          <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
       </div>
-      
-      <button class="mobile-menu-btn" aria-label="Toggle Menu">
-        <i data-lucide="menu"></i>
-      </button>
     </div>
   </header>
 
+  <!-- Mobile Navigation Backdrop Overlay -->
+  <div class="nav-backdrop"></div>
+
   <!-- Main Content -->
   <main>
-    
-    <!-- Hero Section -->
+
+    <!-- Hero Section with GTA Vice City Sunset Atmosphere -->
     <section id="home" class="hero">
       <canvas id="network-canvas"></canvas>
+
+      <!-- Retro 1980s Miami Perspective Grid & Horizon Glow -->
+      <div class="retro-grid"></div>
+      <div class="sunset-horizon-glow"></div>
+
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="hero-welcome">
-            <i data-lucide="terminal"></i> Welcome to my space
+
+          <!-- Live Status Badge -->
+          <div class="hero-badge-available">
+            <span class="badge-dot"></span> Cloud &amp; DevOps Engineer | Open for Opportunities
           </div>
-          <h1 class="hero-title">
-            Hi, I'm <span class="text-gradient">Midhun P K</span>
-          </h1>
+
+          <h1 class="hero-title">MIDHUN P K</h1>
+          <h2 class="hero-tagline">Architecting <span class="text-gradient-vice">Cloud Systems</span> on the Digital Horizon</h2>
+
           <div class="hero-subtitle">
-            <span>I'm a&nbsp;</span><span class="typed-text"></span>
+            <span>Specializing in&nbsp;</span><span class="typed-text"></span>
           </div>
+
           <p class="hero-desc">
-            Computer Science Engineering graduate and Cloud Intern with practical exposure to AWS, Microsoft Azure, Docker containerization, and GitHub Actions CI/CD workflows. Passionate about automating, securing, and maintaining scalable cloud infrastructure.
+            Computer Science graduate and Cloud Intern at Febno Technologies. Engineering scalable multi-cloud architectures across AWS &amp; Microsoft Azure with containerization, zero-trust OIDC workflows, and automated CI/CD pipelines.
           </p>
+
+          <!-- Quick Metrics Strip -->
+          <div class="hero-metrics-strip">
+            <div class="strip-item">
+              <div class="strip-num">5<span>+</span></div>
+              <div class="strip-label">Architectures</div>
+            </div>
+            <div class="strip-item">
+              <div class="strip-num">AWS<span>&amp;</span>AZ</div>
+              <div class="strip-label">Multi-Cloud</div>
+            </div>
+            <div class="strip-item">
+              <div class="strip-num">GATE<span>'26</span></div>
+              <div class="strip-label">Qualified CS</div>
+            </div>
+            <div class="strip-item">
+              <div class="strip-num">99.9<span>%</span></div>
+              <div class="strip-label">HA Reliability</div>
+            </div>
+          </div>
+
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">
-              View My Work <i data-lucide="arrow-right"></i>
+              Explore Projects <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
             </a>
-            <a href="#contact" class="btn btn-secondary">
+            <a href="resume.html" class="btn btn-secondary">
+              <i data-lucide="file-text" style="width: 16px; height: 16px;"></i> View Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
               Contact Me
             </a>
-            <div class="hero-socials" style="display: inline-flex; gap: 0.75rem; align-items: center;">
-              <a href="https://github.com/midhunpk40" target="_blank" class="social-btn" aria-label="GitHub Profile" style="width: 44px; height: 44px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </div>
+
+          <!-- Hero Social Profiles with Clear Separation -->
+          <div class="hero-socials-wrapper">
+            <span class="socials-label">Connect:</span>
+            <div class="hero-socials">
+              <a href="https://github.com/midhunpk40" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
               </a>
-              <a href="https://www.linkedin.com/in/midhunmohanpk" target="_blank" class="social-btn" aria-label="LinkedIn Profile" style="width: 44px; height: 44px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://linkedin.com/in/midhunmohanpk" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
               </a>
             </div>
           </div>
         </div>
-        
+
+        <!-- Hero Right: Miami Sunset Neon Profile Showcase -->
         <div class="hero-visual">
-          <div class="cloud-visual">
-            <div class="visual-sphere"></div>
-            <div class="visual-sphere-inner"></div>
-            <div class="visual-center-card">
-              <i data-lucide="cloud"></i>
-              <span>AWS CLOUD</span>
+          <div class="hero-profile-card">
+            <div class="hero-profile-inner">
+              <img src="midhun.jpg" alt="Midhun P K â€” Cloud Infrastructure &amp; DevOps Engineer">
+              <div class="hero-profile-sheen"></div>
             </div>
-            
-            <!-- Floating nodes representing ecosystem -->
-            <div class="floating-node node-1">
-              <i data-lucide="container" style="color: var(--color-cyan);"></i> Docker
+
+            <!-- Floating Technical Badges with Miami Neon Framing -->
+            <div class="hero-floating-pill pill-azure">
+              <i data-lucide="cloud" style="width: 14px; height: 14px;"></i> Azure &amp; Serverless
             </div>
-            <div class="floating-node node-2">
-              <i data-lucide="terminal" style="color: var(--color-purple);"></i> Linux
+            <div class="hero-floating-pill pill-aws">
+              <i data-lucide="server" style="width: 14px; height: 14px;"></i> AWS Multi-AZ
             </div>
-            <div class="floating-node node-3">
-              <i data-lucide="git-merge" style="color: var(--color-blue);"></i> CI/CD
+            <div class="hero-floating-pill pill-devops">
+              <i data-lucide="container" style="width: 14px; height: 14px;"></i> Docker &amp; CI/CD
+            </div>
+
+            <div class="hero-telemetry-status">
+              <i data-lucide="check-circle" style="width: 12px; height: 12px;"></i>
+              <span>All Cloud Systems Online (200 OK)</span>
             </div>
           </div>
         </div>
       </div>
-      
-      <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
-        <span>SCROLL DOWN</span>
-        <div class="scroll-mouse">
-          <div class="scroll-wheel"></div>
-        </div>
-      </a>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="about">
       <div class="container">
         <div class="about-grid">
-          
-          <!-- Column 1: Portrait Photo -->
-          <div class="about-image-column reveal" style="display: flex; justify-content: center; position: relative;">
-            <div class="about-image-wrapper" style="position: relative; width: 100%; max-width: 360px; aspect-ratio: 4/5; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid rgba(255,255,255,0.08); box-shadow: var(--shadow-glass); z-index: 5;">
-              <img src="midhun.jpg" alt="Midhun P K" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
-              <div class="about-image-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(5, 5, 5, 0.8) 0%, rgba(5, 5, 5, 0.1) 60%, rgba(255, 255, 255, 0.05) 100%); pointer-events: none;"></div>
-              <div class="about-image-badge" style="position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); background: rgba(20, 20, 20, 0.85); border: 1px solid rgba(255, 255, 255, 0.3); backdrop-filter: var(--blur-glass); -webkit-backdrop-filter: var(--blur-glass); padding: 0.5rem 1.25rem; border-radius: 50px; display: flex; align-items: center; gap: 0.5rem; color: var(--color-cyan); font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.5px; box-shadow: var(--glow-cyan); white-space: nowrap;">
-                <i data-lucide="briefcase" style="width: 14px; height: 14px;"></i> Cloud Intern
+
+          <!-- Column 1: Portrait Photo with Cyber Frame -->
+          <div class="about-image-column reveal">
+            <div class="about-image-wrapper">
+              <img src="midhun.jpg" alt="Midhun P K â€” Cloud & DevOps Engineer">
+              <div class="about-image-overlay"></div>
+              <div class="about-image-badge">
+                <i data-lucide="briefcase" style="width: 15px; height: 15px;"></i> Cloud Intern @ Febno
               </div>
             </div>
-            <!-- Decorative border accent -->
-            <div style="position: absolute; top: -15px; left: -15px; width: 60px; height: 60px; border-top: 3px solid var(--color-cyan); border-left: 3px solid var(--color-cyan); border-top-left-radius: 12px; pointer-events: none; z-index: 1;"></div>
-            <div style="position: absolute; bottom: -15px; right: -15px; width: 60px; height: 60px; border-bottom: 3px solid var(--color-purple); border-right: 3px solid var(--color-purple); border-bottom-right-radius: 12px; pointer-events: none; z-index: 1;"></div>
+            <!-- Decorative Cyber Brackets -->
+            <div class="cyber-bracket-tl"></div>
+            <div class="cyber-bracket-br"></div>
           </div>
-          
+
           <!-- Column 2: Text summary and metrics -->
           <div class="about-summary reveal">
             <span class="section-tag">About Me</span>
-            <h2 class="section-title">Bridging Theory & Cloud Engineering</h2>
+            <h2 class="section-title">Bridging Theory with Production Cloud Engineering</h2>
             <p>
               I am a Computer Science Engineering graduate and Cloud Intern with practical exposure to AWS and Microsoft Azure, CI/CD pipelines with GitHub Actions, Docker, and infrastructure automation. I am comfortable with Linux, Python and Bash scripting, and networking fundamentals such as VPCs, security groups, and load balancing.
             </p>
-            <p class="about-quote">
-              "Seeking a Cloud or DevOps engineering role where I can manage cloud infrastructure, build and maintain CI/CD pipelines, and help keep applications reliable and secure."
-            </p>
-            <p>
-              With hands-on experience in cloud server administration, containerized deployments, and disaster recovery workflows, I enjoy architecting dependable environments and continuously mastering new cloud technologies.
-            </p>
-            
-            <div class="about-metrics">
-              <div class="glass-panel metric-card">
-                <div class="metric-num">AWS & Azure</div>
-                <div class="metric-label">Cloud Platforms</div>
+
+            <!-- Terminal Quote Block -->
+            <div class="terminal-quote-box">
+              <div class="terminal-header">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+                <span class="terminal-title">bash â€” midhun@cloud-terminal:~</span>
               </div>
-              <div class="glass-panel metric-card">
-                <div class="metric-num">CI/CD</div>
-                <div class="metric-label">Docker & Pipelines</div>
-              </div>
-              <div class="glass-panel metric-card">
-                <div class="metric-num">GATE '26</div>
-                <div class="metric-label">Qualified CS</div>
+              <div class="terminal-prompt">$ midhun --career-objective</div>
+              <div class="terminal-output">
+                "Seeking a Cloud or DevOps engineering role where I can manage cloud infrastructure, build and maintain CI/CD pipelines, and help keep applications reliable, automated, and secure."
               </div>
             </div>
+
+            <p>
+              With hands-on experience in cloud server administration, containerized deployments, and disaster recovery workflows, I enjoy architecting dependable environments and continuously mastering modern cloud platforms.
+            </p>
           </div>
-          
+
         </div>
 
-        <!-- Pillars Grid (Row under columns) -->
-        <div class="about-pillars-grid reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 5rem;">
-            <!-- Pillar 1 -->
-            <div class="glass-panel pillar-item" style="height: 100%;">
-              <div class="pillar-icon-box">
-                <i data-lucide="cloud"></i>
-              </div>
-              <div class="pillar-info">
-                <h3>Cloud & Server Administration</h3>
-                <p>Configuring AWS (EC2, S3, RDS, VPC, IAM, ALB, ECS, ECR, CloudWatch) and Microsoft Azure (VMs, VNets, Storage, Entra ID, Azure Monitor) across Linux and Windows Server environments.</p>
-              </div>
+        <!-- Architectural Pillars Grid -->
+        <div class="about-pillars-grid reveal">
+          <div class="glass-panel pillar-item">
+            <div class="pillar-icon-box">
+              <i data-lucide="cloud"></i>
             </div>
-            
-            <!-- Pillar 2 -->
-            <div class="glass-panel pillar-item" style="height: 100%;">
-              <div class="pillar-icon-box">
-                <i data-lucide="infinity"></i>
-              </div>
-              <div class="pillar-info">
-                <h3>CI/CD, Containers & Automation</h3>
-                <p>Constructing automated GitHub Actions release pipelines, containerizing applications with Docker & Kubernetes, and automating infrastructure with Terraform, Bash, and Python.</p>
-              </div>
+            <div class="pillar-info">
+              <h3>Cloud &amp; Server Administration</h3>
+              <p>Configuring AWS (EC2, S3, RDS, VPC, IAM, ALB, ECS, ECR, CloudWatch) and Microsoft Azure (VMs, VNets, Storage, Entra ID, Azure Monitor) across Linux and Windows Server environments.</p>
             </div>
-            
-            <!-- Pillar 3 -->
-            <div class="glass-panel pillar-item" style="height: 100%;">
-              <div class="pillar-icon-box">
-                <i data-lucide="shield-check"></i>
-              </div>
-              <div class="pillar-info">
-                <h3>Reliability, Security & Networking</h3>
-                <p>Structuring resilient Multi-AZ high-availability architectures with Application Load Balancers, backup and disaster recovery plans, IAM least privilege, and private VPC subnets.</p>
-              </div>
+          </div>
+
+          <div class="glass-panel pillar-item">
+            <div class="pillar-icon-box">
+              <i data-lucide="infinity"></i>
             </div>
+            <div class="pillar-info">
+              <h3>CI/CD, Containers &amp; Automation</h3>
+              <p>Constructing automated GitHub Actions release pipelines, containerizing applications with Docker &amp; Kubernetes, and automating infrastructure with Terraform, Bash, and Python.</p>
+            </div>
+          </div>
+
+          <div class="glass-panel pillar-item">
+            <div class="pillar-icon-box">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div class="pillar-info">
+              <h3>Reliability, Security &amp; Networking</h3>
+              <p>Structuring resilient Multi-AZ high-availability architectures with Application Load Balancers, backup and disaster recovery plans, IAM least privilege, and private VPC subnets.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Experience & Education Section -->
+    <!-- Work Experience Section -->
     <section id="experience" class="experience">
       <div class="container reveal">
-        <div style="text-align: center; margin-bottom: 3rem;">
-          <span class="section-tag">Career History & Background</span>
+        <div class="section-header-center">
+          <span class="section-tag">Career History</span>
           <h2 class="section-title">Work Experience</h2>
+          <p class="section-desc">Hands-on infrastructure operations, cloud administration, and enterprise system management.</p>
         </div>
-        
+
         <div class="experience-grid">
           <!-- Primary Role: Cloud Intern at Febno Technologies -->
           <div class="glass-panel experience-card">
@@ -232,17 +302,17 @@
                 <div class="experience-title-wrap">
                   <h3>
                     Cloud Intern
-                    <span class="experience-badge-active">Active</span>
+                    <span class="experience-badge-active">Active Role</span>
                   </h3>
                   <div class="experience-company">Febno Technologies</div>
                 </div>
               </div>
               <div class="experience-duration">
                 <i data-lucide="calendar" style="width: 14px; height: 14px; color: var(--color-cyan);"></i>
-                <span>09/2026 – Present</span>
+                <span>09/2026 â€“ Present</span>
               </div>
             </div>
-            
+
             <ul class="experience-bullets">
               <li>
                 Practiced Windows Server administration, virtualization, web hosting, and email migration, building a working understanding of day-to-day infrastructure operations.
@@ -254,7 +324,7 @@
                 Explored infrastructure automation, monitoring, high availability, backup and disaster recovery, cloud security, Microsoft 365, and endpoint management.
               </li>
             </ul>
-            
+
             <div class="experience-tags">
               <span class="experience-tag"><i data-lucide="cloud" style="width: 12px; height: 12px; display: inline-block; vertical-align: middle; margin-right: 4px; color: var(--color-cyan);"></i> AWS</span>
               <span class="experience-tag"><i data-lucide="cloud" style="width: 12px; height: 12px; display: inline-block; vertical-align: middle; margin-right: 4px; color: var(--color-blue);"></i> Microsoft Azure</span>
@@ -263,66 +333,68 @@
               <span class="experience-tag">Virtualization</span>
               <span class="experience-tag">Web Hosting</span>
               <span class="experience-tag">Email Migration</span>
-              <span class="experience-tag">AWS CLI & Azure CLI</span>
-              <span class="experience-tag">CloudWatch & Azure Monitor</span>
+              <span class="experience-tag">AWS CLI &amp; Azure CLI</span>
+              <span class="experience-tag">CloudWatch &amp; Azure Monitor</span>
               <span class="experience-tag">Microsoft 365</span>
               <span class="experience-tag">Endpoint Management</span>
-              <span class="experience-tag">Disaster Recovery & Security</span>
+              <span class="experience-tag">Disaster Recovery &amp; Security</span>
             </div>
           </div>
         </div>
 
         <!-- Education & Achievements Sub-Grid -->
-        <div class="credentials-row">
-          <!-- Card 1: B.Tech -->
-          <div class="glass-panel credential-card">
-            <div class="credential-header">
-              <div class="credential-icon-box">
-                <i data-lucide="graduation-cap"></i>
+        <div class="credentials-section">
+          <div class="credentials-row">
+            <!-- Card 1: B.Tech -->
+            <div class="glass-panel credential-card">
+              <div class="credential-header">
+                <div class="credential-icon-box">
+                  <i data-lucide="graduation-cap"></i>
+                </div>
+                <div>
+                  <h4 class="credential-title">B.Tech in Computer Science and Engineering</h4>
+                  <div class="credential-subtitle">APJ Abdul Kalam Technological University</div>
+                  <div class="credential-date">2022 â€“ 2026</div>
+                </div>
               </div>
-              <div>
-                <h4 class="credential-title">B.Tech in Computer Science and Engineering</h4>
-                <div class="credential-subtitle">APJ Abdul Kalam Technological University</div>
-                <div class="credential-date">2022 – 2026</div>
-              </div>
+              <p class="credential-body">
+                Completed comprehensive undergraduate engineering coursework covering operating systems, computer networking, database management systems, and system design.
+              </p>
             </div>
-            <p class="credential-body">
-              Completed comprehensive undergraduate engineering coursework covering operating systems, computer networking, database management systems, and system design.
-            </p>
-          </div>
 
-          <!-- Card 2: Diploma in Cloud -->
-          <div class="glass-panel credential-card">
-            <div class="credential-header">
-              <div class="credential-icon-box">
-                <i data-lucide="award"></i>
+            <!-- Card 2: Diploma in Cloud -->
+            <div class="glass-panel credential-card">
+              <div class="credential-header">
+                <div class="credential-icon-box">
+                  <i data-lucide="award"></i>
+                </div>
+                <div>
+                  <h4 class="credential-title">Skilled Diploma in Cloud Computing</h4>
+                  <div class="credential-subtitle">TechnoDot Academy of R&amp;D&amp;I</div>
+                  <div class="credential-date">06/2026 â€“ 08/2026</div>
+                </div>
               </div>
-              <div>
-                <h4 class="credential-title">Skilled Diploma in Cloud Computing</h4>
-                <div class="credential-subtitle">TechnoDot Academy of R&D&I</div>
-                <div class="credential-date">06/2026 – 08/2026</div>
-              </div>
+              <p class="credential-body">
+                Specialized hands-on technical training program covering multi-cloud deployments, AWS/Azure administration, Docker, CI/CD pipeline automation, and Linux sysadmin.
+              </p>
             </div>
-            <p class="credential-body">
-              Specialized hands-on technical training program covering multi-cloud deployments, AWS/Azure administration, Docker, CI/CD pipeline automation, and Linux sysadmin.
-            </p>
-          </div>
 
-          <!-- Card 3: GATE Achievement -->
-          <div class="glass-panel credential-card">
-            <div class="credential-header">
-              <div class="credential-icon-box gold">
-                <i data-lucide="trophy"></i>
+            <!-- Card 3: GATE Achievement -->
+            <div class="glass-panel credential-card">
+              <div class="credential-header">
+                <div class="credential-icon-box gold">
+                  <i data-lucide="trophy"></i>
+                </div>
+                <div>
+                  <h4 class="credential-title">Qualified GATE 2026</h4>
+                  <div class="credential-subtitle" style="color: var(--color-amber);">Computer Science &amp; Engineering</div>
+                  <div class="credential-date">National Milestone Examination</div>
+                </div>
               </div>
-              <div>
-                <h4 class="credential-title">Qualified GATE 2026</h4>
-                <div class="credential-subtitle" style="color: #fbbf24;">Computer Science & Engineering</div>
-                <div class="credential-date">All-India Examination Milestone</div>
-              </div>
+              <p class="credential-body">
+                Qualified in Graduate Aptitude Test in Engineering (GATE 2026 CS), establishing rigorous academic competency across core computer science principles.
+              </p>
             </div>
-            <p class="credential-body">
-              Qualified in Graduate Aptitude Test in Engineering (GATE 2026 CS), establishing rigorous academic competency across core computer science principles.
-            </p>
           </div>
         </div>
 
@@ -332,122 +404,132 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
       <div class="container reveal">
-        <div style="text-align: center; margin-bottom: 3rem;">
-          <span class="section-tag">Capabilities & Expertise</span>
-          <h2 class="section-title">Skills & Toolkit</h2>
+        <div class="section-header-center">
+          <span class="section-tag">Capabilities &amp; Toolkit</span>
+          <h2 class="section-title">Skills &amp; Cloud Matrix</h2>
+          <p class="section-desc">Technical competencies across cloud platforms, DevOps workflows, operating systems, and scripting languages.</p>
         </div>
-        
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-nav">
+          <button class="skill-filter-btn active" data-filter="all">All Capabilities</button>
+          <button class="skill-filter-btn" data-filter="cloud">Cloud &amp; Infrastructure</button>
+          <button class="skill-filter-btn" data-filter="cicd">CI/CD &amp; Automation</button>
+          <button class="skill-filter-btn" data-filter="reliability">Containers &amp; Reliability</button>
+          <button class="skill-filter-btn" data-filter="languages">Languages &amp; Tools</button>
+        </div>
+
         <div class="skills-grid">
-          
+
           <!-- Card 1: Cloud & Server Administration -->
-          <div class="glass-panel skill-category-card">
+          <div class="glass-panel skill-category-card" data-category="cloud">
             <div class="skill-card-header">
               <div class="skill-card-icon icon-cloud">
                 <i data-lucide="cloud"></i>
               </div>
               <div>
-                <h3>Cloud & Server Administration</h3>
-                <span class="skill-card-subtitle">AWS, Azure & Enterprise Systems</span>
+                <h3>Cloud &amp; Server Administration</h3>
+                <span class="skill-card-subtitle">AWS, Azure &amp; Enterprise Systems</span>
               </div>
             </div>
-            
+
             <p class="skill-category-desc">
               Designing, provisioning, and administering enterprise cloud environments, virtualized workloads, and production web server platforms.
             </p>
-            
+
             <div class="skill-badges-container">
               <div class="skill-badge highlight-badge"><i data-lucide="cloud"></i> AWS (EC2, S3, RDS, VPC)</div>
               <div class="skill-badge highlight-badge"><i data-lucide="cloud"></i> Microsoft Azure (VMs, VNets)</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> AWS IAM & ALB</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> ECS Fargate & ECR</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> CloudWatch & Azure Monitor</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Linux & Windows Server</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Virtualization & Web Hosting</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> AWS IAM &amp; ALB</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> ECS Fargate &amp; ECR</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> CloudWatch &amp; Azure Monitor</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Linux &amp; Windows Server</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Virtualization &amp; Web Hosting</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> Apache HTTP Server</div>
             </div>
           </div>
-          
+
           <!-- Card 2: CI/CD & Automation -->
-          <div class="glass-panel skill-category-card">
+          <div class="glass-panel skill-category-card" data-category="cicd">
             <div class="skill-card-header">
               <div class="skill-card-icon icon-saas">
                 <i data-lucide="infinity"></i>
               </div>
               <div>
-                <h3>CI/CD & Automation</h3>
-                <span class="skill-card-subtitle">DevOps & Infrastructure as Code</span>
+                <h3>CI/CD &amp; Automation</h3>
+                <span class="skill-card-subtitle">DevOps &amp; Infrastructure as Code</span>
               </div>
             </div>
-            
+
             <p class="skill-category-desc">
               Building continuous integration and automated deployment pipelines, automating cloud infrastructure, and authoring shell provisioning scripts.
             </p>
-            
+
             <div class="skill-badges-container">
               <div class="skill-badge highlight-badge"><i data-lucide="git-merge"></i> GitHub Actions</div>
               <div class="skill-badge highlight-badge"><i data-lucide="layers"></i> Terraform (IaC)</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> CI/CD Pipelines</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Git & GitHub Workflows</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Git &amp; GitHub Workflows</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> Bash Scripting</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> Python Automation</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> AWS CLI & Azure CLI</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> AWS CLI &amp; Azure CLI</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> EC2 User Data Scripts</div>
             </div>
           </div>
 
           <!-- Card 3: Containerization & Reliability -->
-          <div class="glass-panel skill-category-card">
+          <div class="glass-panel skill-category-card" data-category="reliability">
             <div class="skill-card-header">
               <div class="skill-card-icon icon-network">
                 <i data-lucide="shield-check"></i>
               </div>
               <div>
-                <h3>Containerization & Reliability</h3>
-                <span class="skill-card-subtitle">Orchestration & High Availability</span>
+                <h3>Containerization &amp; Reliability</h3>
+                <span class="skill-card-subtitle">Orchestration &amp; High Availability</span>
               </div>
             </div>
-            
+
             <p class="skill-category-desc">
               Containerizing applications, orchestrating workloads, and designing fault-tolerant, secure, and disaster-resilient cloud architectures.
             </p>
-            
+
             <div class="skill-badges-container">
               <div class="skill-badge highlight-badge"><i data-lucide="container"></i> Docker</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> Kubernetes</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> ECS Fargate & ECR</div>
-              <div class="skill-badge highlight-badge"><i data-lucide="check-circle-2"></i> High Availability & Multi-AZ</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> ECS Fargate &amp; ECR</div>
+              <div class="skill-badge highlight-badge"><i data-lucide="check-circle-2"></i> High Availability &amp; Multi-AZ</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> Load Balancing (ALB)</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Backup & Disaster Recovery</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Cloud Security & IAM</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> VPC Private Subnets & SGs</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Backup &amp; Disaster Recovery</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> Cloud Security &amp; IAM</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> VPC Private Subnets &amp; SGs</div>
             </div>
           </div>
 
           <!-- Card 4: Languages & Tools -->
-          <div class="glass-panel skill-category-card">
+          <div class="glass-panel skill-category-card" data-category="languages">
             <div class="skill-card-header">
               <div class="skill-card-icon icon-web">
                 <i data-lucide="code-2"></i>
               </div>
               <div>
-                <h3>Languages & Tools</h3>
-                <span class="skill-card-subtitle">Software, SaaS & Developer Toolkit</span>
+                <h3>Languages &amp; Tools</h3>
+                <span class="skill-card-subtitle">Software, SaaS &amp; Developer Toolkit</span>
               </div>
             </div>
-            
+
             <p class="skill-category-desc">
               Proficient in scripting, backend programming, relational database querying, and modern cloud workplace management suites.
             </p>
-            
+
             <div class="skill-badges-container">
-              <div class="skill-badge highlight-badge"><i data-lucide="file-code"></i> Python & Bash</div>
-              <div class="skill-badge"><i data-lucide="server"></i> Node.js & JavaScript</div>
-              <div class="skill-badge highlight-badge"><i data-lucide="database"></i> SQL & MySQL</div>
-              <div class="skill-badge"><i data-lucide="code"></i> C, PHP, HTML & CSS</div>
+              <div class="skill-badge highlight-badge"><i data-lucide="file-code"></i> Python &amp; Bash</div>
+              <div class="skill-badge"><i data-lucide="server"></i> Node.js &amp; JavaScript</div>
+              <div class="skill-badge highlight-badge"><i data-lucide="database"></i> SQL &amp; MySQL</div>
+              <div class="skill-badge"><i data-lucide="code"></i> C, PHP, HTML &amp; CSS</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> Microsoft 365</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> Endpoint Management</div>
               <div class="skill-badge"><i data-lucide="check-circle-2"></i> Email Migration</div>
-              <div class="skill-badge"><i data-lucide="check-circle-2"></i> VS Code & Colab</div>
+              <div class="skill-badge"><i data-lucide="check-circle-2"></i> VS Code &amp; Colab</div>
             </div>
           </div>
 
@@ -458,42 +540,143 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
       <div class="container reveal">
-        <div style="text-align: center; margin-bottom: 2rem;">
+        <div class="section-header-center">
           <span class="section-tag">Case Studies</span>
           <h2 class="section-title">Projects Portfolio</h2>
+          <p class="section-desc">Production-grade architectures, serverless implementations, and automated CI/CD deployments.</p>
         </div>
-        
+
+        <!-- Filter Tabs -->
+        <div class="projects-filter-nav">
+          <button class="project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="project-filter-btn" data-filter="featured">Featured Architecture</button>
+          <button class="project-filter-btn" data-filter="aws">AWS Deployments</button>
+          <button class="project-filter-btn" data-filter="serverless">Serverless &amp; IoT</button>
+          <button class="project-filter-btn" data-filter="azure">Azure Cloud</button>
+        </div>
+
+        <!-- Featured Project: Azure Cloud Serverless Portfolio -->
+        <div class="glass-panel featured-project-card" data-id="project-azure-cloud-portfolio">
+          <div class="featured-badge">
+            <i data-lucide="star" style="width: 14px; height: 14px; fill: currentColor;"></i> Featured Azure Architecture
+          </div>
+          <div class="featured-grid">
+            <div class="featured-info-col">
+              <h3 class="featured-title">Azure Cloud Serverless Portfolio &amp; API Platform</h3>
+              <p class="featured-desc">
+                Architected and deployed an enterprise-grade serverless cloud platform on Microsoft Azure. Features an automated CI/CD pipeline via GitHub Actions and Azure Static Web Apps, serverless Node.js APIs on Azure Functions, global Cosmos DB NoSQL visitor analytics, and Application Insights distributed tracing.
+              </p>
+
+              <div class="featured-tech-row">
+                <span class="featured-tech-tag">Microsoft Azure</span>
+                <span class="featured-tech-tag">Azure Static Web Apps</span>
+                <span class="featured-tech-tag">Azure Functions</span>
+                <span class="featured-tech-tag">Azure Cosmos DB</span>
+                <span class="featured-tech-tag">Application Insights</span>
+                <span class="featured-tech-tag">GitHub Actions CI/CD</span>
+                <span class="featured-tech-tag">CSP Security</span>
+              </div>
+
+              <div class="featured-actions">
+                <button class="btn btn-primary btn-pdf-view" data-id="project-azure-cloud-portfolio">
+                  <i data-lucide="file-text" style="width: 16px; height: 16px;"></i> Technical Specs
+                </button>
+                <a href="https://github.com/midhunpk40/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg> View Repository
+                </a>
+              </div>
+            </div>
+
+            <!-- Blueprint Specs Box -->
+            <div class="featured-specs-box">
+              <div class="specs-box-title">
+                <i data-lucide="cpu" style="width: 16px; height: 16px;"></i> Architectural Metrics
+              </div>
+              <div class="spec-line">
+                <span class="spec-k">Hosting Topology</span>
+                <span class="spec-v">Azure Static Web Apps</span>
+              </div>
+              <div class="spec-line">
+                <span class="spec-k">Serverless Compute</span>
+                <span class="spec-v">Node.js 20 Functions</span>
+              </div>
+              <div class="spec-line">
+                <span class="spec-k">Database Engine</span>
+                <span class="spec-v">Cosmos DB Serverless</span>
+              </div>
+              <div class="spec-line">
+                <span class="spec-k">Point-Read Latency</span>
+                <span class="spec-v">&lt;10 ms</span>
+              </div>
+              <div class="spec-line">
+                <span class="spec-k">Security Standard</span>
+                <span class="spec-v">Strict CSP &amp; HSTS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard Projects Grid for AWS Projects -->
         <div class="projects-grid">
+          <!-- Card: Cold-Chain Excursion Monitoring Platform -->
+          <div class="glass-panel project-card" data-id="project-cold-chain-monitoring" data-category="aws serverless iot event-driven terraform">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i data-lucide="activity"></i>
+              </div>
+              <span class="project-category">Serverless &amp; Event-Driven</span>
+            </div>
+            <div class="project-card-body">
+              <h3>Cold-Chain Excursion Monitoring Platform</h3>
+              <p>Built a serverless AWS platform using IoT Core, Lambda, and DynamoDB detecting temperature excursions and silent sensors in vaccine shipments, with Step Functions escalation, Cognito RBAC, and Terraform IaC.</p>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-tech-summary">AWS IoT Core, Lambda, DynamoDB, Step Functions, Terraform</span>
+              <div class="project-card-actions">
+                <button class="btn-pdf-view" data-id="project-cold-chain-monitoring" title="View Technical Report">
+                  <i data-lucide="file-text"></i> Specs
+                </button>
+                <a href="https://github.com/midhunpk40/cold-chain" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-repo-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg> View Repository
+                </a>
+                <span class="project-more-btn" data-id="project-cold-chain-monitoring">Details <i data-lucide="chevron-right" style="height: 14px; width: 14px;"></i></span>
+              </div>
+            </div>
+          </div>
+
           <!-- Card 1: Cloud Task Manager -->
-          <div class="glass-panel project-card" data-id="project-cloud-task-manager">
+          <div class="glass-panel project-card" data-id="project-cloud-task-manager" data-category="aws cicd containers">
             <div class="project-card-header">
               <div class="project-icon-box">
                 <i data-lucide="container"></i>
               </div>
-              <span class="project-category">Cloud Containers & CI/CD</span>
+              <span class="project-category">Cloud Containers &amp; CI/CD</span>
             </div>
             <div class="project-card-body">
               <h3>Cloud Task Manager</h3>
-              <p>Built and containerized a Flask task manager with Docker, deployed to AWS ECS Fargate via Amazon ECR, and automated deployments with a GitHub Actions CI/CD pipeline using GitHub OIDC.</p>
+              <p>Built and containerized a Flask task manager with Docker, deployed to AWS ECS Fargate via Amazon ECR, and automated deployments with a GitHub Actions CI/CD pipeline using keyless GitHub OIDC federation.</p>
             </div>
             <div class="project-card-footer">
               <span class="project-tech-summary">AWS, Docker, GitHub Actions, ECS, CI/CD</span>
               <div class="project-card-actions">
                 <button class="btn-pdf-view" data-id="project-cloud-task-manager" title="View Technical Report">
-                  <i data-lucide="file-text"></i> Report
+                  <i data-lucide="file-text"></i> Specs
                 </button>
+                <a href="https://github.com/midhunpk40/cloud-task-manager" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-repo-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg> View Repository
+                </a>
                 <span class="project-more-btn" data-id="project-cloud-task-manager">Details <i data-lucide="chevron-right" style="height: 14px; width: 14px;"></i></span>
               </div>
             </div>
           </div>
-          
+
           <!-- Card 2: Secure 3-Tier Web Application on AWS -->
-          <div class="glass-panel project-card" data-id="project-3tier-aws">
+          <div class="glass-panel project-card" data-id="project-3tier-aws" data-category="aws architecture security">
             <div class="project-card-header">
               <div class="project-icon-box">
                 <i data-lucide="shield-check"></i>
               </div>
-              <span class="project-category">Cloud Architecture & Security</span>
+              <span class="project-category">Cloud Architecture &amp; Security</span>
             </div>
             <div class="project-card-body">
               <h3>Secure 3-Tier Web Application on AWS</h3>
@@ -509,24 +692,24 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Card 3: High-Availability Multi-AZ Web Architecture with ALB -->
-          <div class="glass-panel project-card" data-id="project-multi-az-alb">
+          <div class="glass-panel project-card" data-id="project-multi-az-alb" data-category="aws networking reliability">
             <div class="project-card-header">
               <div class="project-icon-box">
                 <i data-lucide="network"></i>
               </div>
-              <span class="project-category">High Availability & Networking</span>
+              <span class="project-category">High Availability &amp; Networking</span>
             </div>
             <div class="project-card-body">
               <h3>High-Availability Multi-AZ Web Architecture with ALB</h3>
-              <p>Removed single points of failure by moving web servers behind an internet-facing Application Load Balancer across two AZs with automated User Data Apache installations.</p>
+              <p>Removed single points of failure by moving web servers behind an internet-facing Application Load Balancer across two AZs with automated User Data Apache installations and Target Group health checks.</p>
             </div>
             <div class="project-card-footer">
               <span class="project-tech-summary">EC2, ALB, Apache, Target Groups, Multi-AZ</span>
               <div class="project-card-actions">
                 <button class="btn-pdf-view" data-id="project-multi-az-alb" title="View Technical Report">
-                  <i data-lucide="file-text"></i> Report
+                  <i data-lucide="file-text"></i> Specs
                 </button>
                 <span class="project-more-btn" data-id="project-multi-az-alb">Details <i data-lucide="chevron-right" style="height: 14px; width: 14px;"></i></span>
               </div>
@@ -536,14 +719,95 @@
       </div>
     </section>
 
+    <!-- NEW: Blog Section -->
+    <section id="blog" class="blog">
+      <div class="container reveal">
+        <div class="section-header-center">
+          <span class="section-tag">Engineering Insights</span>
+          <h2 class="section-title">Technical Articles &amp; Blog</h2>
+          <p class="section-desc">Deep dives into zero-secret CI/CD, cloud architecture resilience, serverless engineering, and enterprise cloud cutovers.</p>
+        </div>
+
+        <!-- Blog Controls: Filter Categories & Search Bar -->
+        <div class="blog-controls-row">
+          <div class="blog-categories-nav">
+            <button class="blog-cat-btn active" data-category="all">All Articles</button>
+            <button class="blog-cat-btn" data-category="devops">DevOps &amp; CI/CD</button>
+            <button class="blog-cat-btn" data-category="cloud">Cloud Architecture</button>
+            <button class="blog-cat-btn" data-category="azure">Azure &amp; Serverless</button>
+            <button class="blog-cat-btn" data-category="migration">Cloud Migration</button>
+          </div>
+
+          <div class="blog-search-box">
+            <i data-lucide="search"></i>
+            <input type="text" id="blog-search-input" placeholder="Search technical topics...">
+          </div>
+        </div>
+
+        <!-- Dynamic Blog Articles Grid -->
+        <div id="blog-grid-container" class="blog-grid">
+          <!-- Dynamically populated from blog-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Dedicated Interactive Resume Section -->
+    <section id="resume" class="resume-section">
+      <div class="container reveal">
+        <div class="glass-panel resume-showcase-card">
+          <div class="resume-showcase-grid">
+            <div class="resume-info-col">
+              <span class="section-tag">Curriculum Vitae</span>
+              <h2 class="resume-showcase-title">Ready for Impact in Cloud &amp; DevOps Engineering</h2>
+              <p class="resume-showcase-desc">
+                Review my full verified background, hands-on production internships, computer science education, and competitive qualifications in a single consolidated document.
+              </p>
+
+              <ul class="resume-highlights-list">
+                <li><i data-lucide="check-circle-2"></i> Practical exposure to AWS (ECS, RDS, VPC, S3) and Microsoft Azure (VMs, SWA, Cosmos DB)</li>
+                <li><i data-lucide="check-circle-2"></i> Hands-on infrastructure automation with GitHub Actions CI/CD and Docker</li>
+                <li><i data-lucide="check-circle-2"></i> Qualified GATE 2026 in Computer Science &amp; Engineering</li>
+                <li><i data-lucide="check-circle-2"></i> Active Cloud Intern at Febno Technologies</li>
+              </ul>
+
+              <div class="resume-actions-group">
+                <button type="button" id="resume-download-btn" class="btn btn-primary">
+                  <i data-lucide="download" style="width: 16px; height: 16px;"></i> Download Resume (PDF)
+                </button>
+                <a href="resume.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> View Interactive CV
+                </a>
+              </div>
+              <div id="resume-feedback-error" class="form-feedback error" role="alert" style="margin-top: 0.85rem; display: none;"></div>
+            </div>
+
+            <div class="resume-preview-panel">
+              <div class="resume-doc-header">
+                <div class="resume-doc-name">MIDHUN P K</div>
+                <div class="resume-doc-sub">Cloud &amp; DevOps Engineer</div>
+              </div>
+              <ul class="resume-preview-bullets">
+                <li>Cloud Intern at Febno Technologies (09/2026 â€“ Present)</li>
+                <li>B.Tech in Computer Science &amp; Engineering (2022 â€“ 2026)</li>
+                <li>Skilled Diploma in Cloud Computing (TechnoDot Academy)</li>
+                <li>Qualified GATE 2026 (Computer Science)</li>
+                <li>4+ End-to-End Cloud Projects on AWS &amp; Azure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="services">
       <div class="container reveal">
-        <div style="text-align: center; margin-bottom: 2rem;">
-          <span class="section-tag">What I Offer</span>
-          <h2 class="section-title">Core Services & Expertise</h2>
+        <div class="section-header-center">
+          <span class="section-tag">What I Deliver</span>
+          <h2 class="section-title">Core Services &amp; Expertise</h2>
+          <p class="section-desc">Specialized engineering competencies to design, deploy, automate, and safeguard production workloads.</p>
         </div>
-        
+
         <div class="services-grid">
           <!-- Card 1 -->
           <div class="glass-panel service-card">
@@ -551,24 +815,24 @@
               <i data-lucide="cloud-lightning"></i>
             </div>
             <h3>Cloud Deployment</h3>
-            <p>Deploying application runtimes to AWS, designing private networks (VPCs) with strict routing tables, implementing secure access policies, and hosting static assets on object stores.</p>
+            <p>Deploying application runtimes to AWS and Azure, designing private networks (VPCs) with strict routing tables, implementing secure access policies, and hosting static assets on object stores.</p>
             <div class="service-footer-value">
-              <i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> Standard AWS Best Practices
+              <i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> Standard Cloud Best Practices
             </div>
           </div>
-          
+
           <!-- Card 2 -->
           <div class="glass-panel service-card">
             <div class="service-icon-box">
               <i data-lucide="git-commit"></i>
             </div>
             <h3>CI/CD Integration</h3>
-            <p>Constructing multi-stage automation tasks to pull, audit, compile, and push container images to staging repositories. Reducing deploy cycle timelines and developer errors.</p>
+            <p>Constructing multi-stage automation tasks to pull, audit, compile, and push container images to staging repositories. Reducing deploy cycle timelines and developer errors with zero-secret OIDC.</p>
             <div class="service-footer-value">
               <i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> Automated Deployments
             </div>
           </div>
-          
+
           <!-- Card 3 -->
           <div class="glass-panel service-card">
             <div class="service-icon-box">
@@ -580,14 +844,14 @@
               <i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> Clean HCL Architecture
             </div>
           </div>
-          
+
           <!-- Card 4 -->
           <div class="glass-panel service-card">
             <div class="service-icon-box">
               <i data-lucide="shield-check"></i>
             </div>
             <h3>Linux Server Management</h3>
-            <p>Implementing system policies, disabling default accounts, closing unused ports, and configuring alerts based on service runtimes or memory leaks.</p>
+            <p>Implementing system policies, disabling default accounts, closing unused ports, and configuring alerts based on service runtimes or memory leaks with automated Let's Encrypt HTTPS.</p>
             <div class="service-footer-value">
               <i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> Hardened Configurations
             </div>
@@ -599,90 +863,94 @@
     <!-- Contact Us Section -->
     <section id="contact" class="contact">
       <div class="container reveal">
-        <div style="text-align: center; margin-bottom: 2rem;">
+        <div class="section-header-center">
           <span class="section-tag">Let's Connect</span>
           <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">Open for discussions about cloud roles, project collaborations, and infrastructure engineering chats.</p>
         </div>
-        
+
         <div class="contact-grid">
-          <div class="contact-info-column">
-            <p class="contact-desc">
-              I am open to discussions about cloud roles, project collaborations, and general tech chats. Fill out the contact form, or connect with me through my details below.
-            </p>
-            
-            <!-- Card Email -->
-            <div class="glass-panel contact-card">
-              <div class="contact-card-icon">
-                <i data-lucide="mail"></i>
+          <!-- Left Column: Unified Glass Card with Zero Extra Gap -->
+          <div class="glass-panel contact-card">
+            <div class="contact-card-header">
+              <h3 class="contact-card-title">Let's Talk Here</h3>
+            </div>
+
+            <div class="contact-items-list">
+              <!-- Item 1: Email Address -->
+              <div class="contact-item">
+                <div class="contact-card-icon">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="contact-item-info">
+                  <span class="contact-item-label">Email Address</span>
+                  <a href="mailto:midhunpk40@gmail.com" class="contact-item-link">midhunpk40@gmail.com</a>
+                </div>
               </div>
-              <div class="contact-card-info">
-                <h4>Email Me</h4>
-                <p><a href="mailto:midhunpk40@gmail.com" style="color: inherit; text-decoration: none; transition: color var(--transition-fast);" onmouseover="this.style.color='var(--color-cyan)'" onmouseout="this.style.color='inherit'">midhunpk40@gmail.com</a></p>
+
+              <!-- Item 2: Phone / WhatsApp -->
+              <div class="contact-item">
+                <div class="contact-card-icon">
+                  <i data-lucide="phone"></i>
+                </div>
+                <div class="contact-item-info">
+                  <span class="contact-item-label">Phone / WhatsApp</span>
+                  <a href="tel:+917736729704" class="contact-item-link">+91 7736729704</a>
+                </div>
+              </div>
+
+              <!-- Item 3: Location -->
+              <div class="contact-item">
+                <div class="contact-card-icon">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="contact-item-info">
+                  <span class="contact-item-label">Location</span>
+                  <span class="contact-item-text">Kannur, Kerala, India</span>
+                </div>
               </div>
             </div>
 
-            <!-- Card Phone -->
-            <div class="glass-panel contact-card">
-              <div class="contact-card-icon">
-                <i data-lucide="phone"></i>
-              </div>
-              <div class="contact-card-info">
-                <h4>Call Me</h4>
-                <p><a href="tel:+917736729704" style="color: inherit; text-decoration: none; transition: color var(--transition-fast);" onmouseover="this.style.color='var(--color-cyan)'" onmouseout="this.style.color='inherit'">+91 7736729704</a></p>
-              </div>
-            </div>
-            
-            <!-- Card Location -->
-            <div class="glass-panel contact-card">
-              <div class="contact-card-icon">
-                <i data-lucide="map-pin"></i>
-              </div>
-              <div class="contact-card-info">
-                <h4>Location</h4>
-                <p>Kannur, Kerala, India</p>
-              </div>
-            </div>
-            
-            <!-- Social Buttons -->
-            <div style="margin-top: 1rem;">
-              <h4 style="font-family: var(--font-display); font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.75rem;">Follow & Star</h4>
-              <div class="social-links">
-                <a href="https://github.com/midhunpk40" target="_blank" class="social-btn" aria-label="GitHub Profile">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <!-- Professional Socials inside Left Card -->
+            <div class="contact-socials-wrapper">
+              <span class="contact-item-label">Professional Networks</span>
+              <div class="hero-socials" style="margin-left: 0; margin-top: 0.65rem;">
+                <a href="https://github.com/midhunpk40" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/midhunmohanpk" target="_blank" class="social-btn" aria-label="LinkedIn Profile">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                <a href="https://linkedin.com/in/midhunmohanpk" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                 </a>
               </div>
             </div>
           </div>
-          
+
           <div class="glass-panel contact-form-panel">
             <form id="contact-form" class="contact-form" autocomplete="off">
               <div class="form-group-row">
                 <div class="form-group">
                   <label for="contact-name" class="form-label">Full Name</label>
-                  <input type="text" id="contact-name" class="form-input" placeholder="John Doe" required>
+                  <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
                   <label for="contact-email" class="form-label">Email Address</label>
-                  <input type="email" id="contact-email" class="form-input" placeholder="john@example.com" required>
+                  <input type="email" id="contact-email" class="form-input" placeholder="you@example.com" required>
                 </div>
               </div>
-              
+
               <div class="form-group">
                 <label for="contact-subject" class="form-label">Subject</label>
-                <input type="text" id="contact-subject" class="form-input" placeholder="Project Discussion" required>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Cloud Engineering / Role Discussion" required>
               </div>
-              
+
               <div class="form-group">
                 <label for="contact-message" class="form-label">Message</label>
                 <textarea id="contact-message" class="form-input" placeholder="Hi Midhun, I would like to discuss..." required></textarea>
               </div>
-              
+
               <div id="feedback-success" class="form-feedback success"></div>
               <div id="feedback-error" class="form-feedback error"></div>
-              
+
               <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; gap: 0.75rem;">
                 Send Message <i data-lucide="send" style="width: 16px; height: 16px;"></i>
               </button>
@@ -703,22 +971,22 @@
         <div class="modal-header-actions">
           <span class="modal-header-tag">Cloud Architecture</span>
           <button class="btn btn-secondary btn-modal-pdf" id="modal-view-pdf-btn">
-            <i data-lucide="file-text"></i> View PDF Report
+            <i data-lucide="file-text"></i> View Technical Specs
           </button>
         </div>
         <h2 class="modal-title">Project Title Placeholder</h2>
         <p class="modal-subtitle">Project Subtitle Placeholder</p>
-        
+
         <div class="modal-desc-section">
           <div class="modal-desc-block">
             <p class="modal-full-desc">
-              Detailed description of the project and its goals will dynamically display here.
+              Detailed description of the project and its architectural goals will dynamically display here.
             </p>
           </div>
-          
+
           <div>
             <h3 class="modal-highlights-title">
-              <i data-lucide="activity"></i> Core Architecture & Achievements
+              <i data-lucide="activity"></i> Core Architecture &amp; Achievements
             </h3>
             <ul class="modal-highlights-list">
               <li>Item highlight 1</li>
@@ -726,9 +994,9 @@
               <li>Item highlight 3</li>
             </ul>
           </div>
-          
+
           <div class="modal-tech-box">
-            <h3 class="modal-tech-title">Tools & Technologies Used</h3>
+            <h3 class="modal-tech-title">Tools &amp; Technologies Used</h3>
             <div class="modal-tech-tags">
               <span class="modal-tag">AWS VPC</span>
               <span class="modal-tag">Terraform</span>
@@ -747,47 +1015,47 @@
           <div class="pdf-icon-badge"><i data-lucide="file-text"></i></div>
           <div>
             <h3 id="pdf-modal-title">Project Technical Documentation</h3>
-            <span id="pdf-modal-category" class="pdf-filename-tag">AWS Cloud Documentation</span>
+            <span id="pdf-modal-category" class="pdf-filename-tag">Cloud Architecture Case Study</span>
           </div>
         </div>
-        
+
         <div class="pdf-toolbar-actions">
           <button id="pdf-modal-close" class="modal-close-btn relative-close" aria-label="Close Documentation Modal">
             <i data-lucide="x"></i>
           </button>
         </div>
       </div>
-      
+
       <div class="pdf-modal-body">
         <div class="doc-showcase-container">
           <!-- Embedded PDF Frame Container -->
           <div id="pdf-frame-wrapper" class="pdf-frame-wrapper">
-            <iframe id="pdf-frame" src="" width="100%" height="480px" style="border: none; border-radius: 12px; background: #0d0d12;"></iframe>
+            <iframe id="pdf-frame" src="" width="100%" height="480px" style="border: none; border-radius: 12px; background: #080a10;"></iframe>
           </div>
 
           <!-- Structured Report Showcase Content -->
           <div id="doc-showcase-content" class="doc-showcase-content">
             <div class="doc-section">
-              <h4 class="doc-section-title"><i data-lucide="info"></i> Executive Overview & Objective</h4>
+              <h4 class="doc-section-title"><i data-lucide="info"></i> Executive Overview &amp; Objective</h4>
               <p id="doc-overview-text" class="doc-text">Executive overview of the project task and cloud engineering goals.</p>
             </div>
 
             <div class="doc-section">
-              <h4 class="doc-section-title"><i data-lucide="server"></i> Environment & Cloud Infrastructure</h4>
+              <h4 class="doc-section-title"><i data-lucide="server"></i> Environment &amp; Cloud Infrastructure</h4>
               <div id="doc-env-grid" class="doc-env-grid">
                 <!-- Dynamic key-value spec cards -->
               </div>
             </div>
 
             <div class="doc-section">
-              <h4 class="doc-section-title"><i data-lucide="list-checks"></i> Implementation & Deployment Workflow</h4>
+              <h4 class="doc-section-title"><i data-lucide="list-checks"></i> Implementation &amp; Deployment Workflow</h4>
               <ol id="doc-steps-list" class="doc-steps-list">
                 <!-- Dynamic step list -->
               </ol>
             </div>
 
             <div class="doc-section">
-              <h4 class="doc-section-title"><i data-lucide="check-square"></i> Validation & Testing Verification Matrix</h4>
+              <h4 class="doc-section-title"><i data-lucide="check-square"></i> Validation &amp; Testing Verification Matrix</h4>
               <div class="doc-table-wrapper">
                 <table class="doc-results-table">
                   <thead>
@@ -809,81 +1077,110 @@
     </div>
   </div>
 
+  <!-- NEW: Blog Article Reader Modal -->
+  <div id="blog-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content blog-modal-content">
+      <button id="blog-modal-close" class="modal-close-btn" aria-label="Close Article Reader">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="blog-reader-header">
+        <span id="blog-reader-category" class="blog-cat-tag">Cloud Architecture</span>
+        <h2 id="blog-reader-title" class="modal-title" style="margin-top: 0.75rem;">Article Title</h2>
+        <div style="display: flex; gap: 1.5rem; color: var(--text-muted); font-size: 0.88rem; font-family: var(--font-mono); margin-top: 0.5rem;">
+          <span id="blog-reader-date">Nov 20, 2026</span>
+          <span>â€¢</span>
+          <span id="blog-reader-time">6 min read</span>
+          <span>â€¢</span>
+          <span>By Midhun P K</span>
+        </div>
+      </div>
+
+      <div class="blog-reader-body">
+        <div id="blog-reader-content" class="blog-article-content">
+          <!-- Dynamic article text, code blocks, diagrams -->
+        </div>
+
+        <div style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle);">
+          <h4 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 1.25rem;">
+            Related Technical Articles
+          </h4>
+          <div id="blog-reader-related" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+            <!-- Dynamic related cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer>
-    <div class="container footer-container">
-      <div class="footer-copy">
-         &copy; <span id="footer-year">2026</span> Midhun P K. Built for Cloud Scale.
-         <span class="visitor-counter">
-              | Visitors: <span id="visit-count">0</span>
-         </span>
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h3>MIDHUN P K<span class="logo-dot"></span></h3>
+          <p>
+            Cloud Infrastructure &amp; DevOps Engineer. Specializing in high-availability multi-cloud environments across AWS and Microsoft Azure.
+          </p>
+          <div class="footer-visitor-box">
+            <span class="footer-visitor-label">Total Unique Visitor Telemetry</span>
+            <div class="footer-visitor-val">
+              <span class="visit-count">1,248</span> Verified Sessions
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#skills">Skills &amp; Toolkit</a></li>
+            <li><a href="#projects">Projects Portfolio</a></li>
+            <li><a href="#blog">Technical Blog</a></li>
+            <li><a href="#resume">Interactive Resume</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Connect</h4>
+          <ul class="footer-links-list">
+            <li><a href="mailto:midhunpk40@gmail.com">midhunpk40@gmail.com</a></li>
+            <li><a href="tel:+917736729704">+91 7736729704</a></li>
+            <li><a href="https://linkedin.com/in/midhunmohanpk" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/midhunpk40" target="_blank" rel="noopener noreferrer">GitHub Repositories</a></li>
+            <li><a href="resume.html" target="_blank" rel="noopener noreferrer">Download Curriculum Vitae</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-socials" style="display: flex; gap: 1.25rem; align-items: center;">
-        <a href="https://github.com/midhunpk40" target="_blank" style="color: var(--text-secondary); transition: color var(--transition-fast); display: inline-flex;" onmouseover="this.style.color='var(--color-cyan)'" onmouseout="this.style.color='var(--text-secondary)'" aria-label="GitHub Profile">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/midhunmohanpk" target="_blank" style="color: var(--text-secondary); transition: color var(--transition-fast); display: inline-flex;" onmouseover="this.style.color='var(--color-cyan)'" onmouseout="this.style.color='var(--text-secondary)'" aria-label="LinkedIn Profile">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; <span id="footer-year">2026</span> Midhun P K. Engineered with Azure Static Web Apps, Functions &amp; Cosmos DB.
+        </div>
+
+        <div class="footer-socials" style="display: flex; gap: 1rem; align-items: center;">
+          <a href="https://github.com/midhunpk40" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/midhunmohanpk" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+
+        <a href="#home" class="footer-top-btn" aria-label="Scroll to top of page">
+          <i data-lucide="arrow-up"></i>
         </a>
       </div>
-      <a href="#home" class="footer-top-btn" aria-label="Scroll to top">
-        <i data-lucide="arrow-up"></i>
-      </a>
     </div>
   </footer>
 
-
-<!-- Scripts -->
-<script src="projects-data.js"></script>
-<script src="config.js"></script>
-<script src="script.js"></script>
-<script src="analytics.js"></script>
-<script>
-    // Initialize Lucide Icons for static markup on page load
-    lucide.createIcons();
-
-    // Set dynamic footer year
-    document.getElementById("footer-year").textContent = new Date().getFullYear();
-</script>
-<script>
-    document.getElementById("resume-download-btn").addEventListener("click", async function (event) {
-        event.preventDefault();
-
-        const button = this;
-        const originalText = button.innerHTML;
-
-        button.style.pointerEvents = "none";
-        button.textContent = "Preparing...";
-
-        try {
-            const response = await fetch(window.APP_CONFIG.API_BASE + "/api/resume");
-
-            if (!response.ok) {
-                throw new Error("Failed to generate download link");
-            }
-
-            const data = await response.json();
-
-            if (!data.downloadUrl) {
-                throw new Error("Download link missing");
-            }
-
-            const link = document.createElement("a");
-            link.href = data.downloadUrl;
-            link.download = "MIDHUN_P_K.pdf";
-            document.body.appendChild(link);
-            link.click();
-            link.remove();
-
-        } catch (error) {
-            alert("Unable to download resume right now. Please try again.");
-        } finally {
-            button.style.pointerEvents = "";
-            button.innerHTML = originalText;
-            lucide.createIcons();
-        }
-    });
-</script>
-
+  <!-- Scripts: Preserving Azure Functions Backend & Telemetry Config -->
+  <script src="config.js"></script>
+  <script src="analytics.js"></script>
+  <script src="projects-data.js"></script>
+  <script src="blog-data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
